@@ -2,10 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "jsx": "react",
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -24,6 +26,13 @@
     ],
     "useDefineForClassFields": false
   },
+  "paths": {
+    "@dotglitch/ngx-common": [ "./node_modules/@dotglitch/ngx-common" ]
+  },
+  "typeRoots": [
+  "node_modules/@types",
+  "./src/types"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
